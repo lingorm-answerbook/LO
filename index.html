@@ -2,14 +2,14 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>正在重新導向...</title>
     <script>
-        // 將剛才從 Excel C 欄複製出來的 300 行，直接貼在下方：
+        // 將 Excel C 欄複製出來的資料貼在下方：
         const qrRoutes = {
-            
-"1": "https://x.com/i/status/2000918169578561965",
-"2": "https://youtu.be/2iguGP6g788?t=849",
-"3": "https://x.com/i/status/1999774855005339800",
+            "1": "https://x.com/i/status/2000918169578561965",
+            "2": "https://youtu.be/2iguGP6g788?t=849",
+            "3": "https://x.com/i/status/1999774855005339800",
 "4": "https://youtu.be/ETdFeTV9qlE?t=941",
 """5"": ""https://x.com/thestandardpop/status/2038965116016664774?s=46
 https://www.threads.com/@lin.2567.in.thai/post/DWjSm-ojCQh?
@@ -329,24 +329,34 @@ https://x.com/OrmKornUnion/status/1957771780950511718?s=20"","
 "283": "https://www.instagram.com/p/DBIa6d3z6ec/?img_index=1",
 "284": "https://www.youtube.com/watch?v=vfpPdJSripg",
 
-        }; // 貼在這一行上方（注意：最後一行的網址後面有沒有逗號都沒關係，瀏覽器看得懂）
+        }; 
 
-        // 自動獲取網址列後面的 ?id= 參數
+        // 預設跳轉的主網站（防呆網址）
+        const defaultUrl = "https://your-main-store.com";
+
+        // 解析網址參數
         const urlParams = new URLSearchParams(window.location.search);
         const qrId = urlParams.get('id');
 
-        // 自動跳轉
-        if (qrId && qrRoutes[qrId]) {
-            window.location.href = qrRoutes[qrId];
-        } else {
-            // 這裡可以改成你的主網站首頁，以防有人亂打編號
-            window.location.href = "https://your-main-store.com";
-        }
+        // 決定最終目的地
+        const targetUrl = (qrId && qrRoutes[qrId]) ? qrRoutes[qrId] : defaultUrl;
+
+        // 執行自動跳轉
+        window.location.href = targetUrl;
+
+        // 當網頁載入完成後，把目的地塞進畫面的超連結（防呆用）
+        window.addEventListener('DOMContentLoaded', () => {
+            const fallbackLink = document.getElementById('fallback-link');
+            if (fallbackLink) {
+                fallbackLink.href = targetUrl;
+            }
+        });
     </script>
 </head>
 <body>
-    <p style="text-align: center; margin-top: 50px; font-family: sans-serif;">
-        頁面跳轉中，請稍候... 如果沒有自動跳轉，請點擊此處。
+    <p style="text-align: center; margin-top: 50px; font-family: sans-serif; font-size: 18px;">
+        頁面跳轉中，請稍候...<br><br>
+        如果沒有自動跳轉，請 <a id="fallback-link" href="#" style="color: #0066cc; text-decoration: underline;">點擊此處</a>。
     </p>
 </body>
 </html>
