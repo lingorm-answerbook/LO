@@ -6,10 +6,328 @@
     <script>
         // 將剛才從 Excel C 欄複製出來的 300 行，直接貼在下方：
         const qrRoutes = {
-"1": "https://google.com",
-"2": "https://yahoo.com.hk",
-"3": "https://gmail.com",
-"300": "https://google.com.hk"
+"1": "https://x.com/i/status/2000918169578561965",
+"2": "https://youtu.be/2iguGP6g788?t=849",
+"3": "https://x.com/i/status/1999774855005339800",
+"4": "https://youtu.be/ETdFeTV9qlE?t=941",
+"""5"": ""https://x.com/thestandardpop/status/2038965116016664774?s=46
+https://www.threads.com/@lin.2567.in.thai/post/DWjSm-ojCQh?
+https://www.instagram.com/reels/DWjLzzEjtNq/"","
+"""6"": ""https://www.youtube.com/watch?v=RJR6lx74yb8
+https://weibo.com/7799315281/P3joir2jI
+cant find"","
+"""7"": ""cant find
+https://www.instagram.com/reel/DDzBw6GSLIF/
+https://www.youtube.com/watch?v=crJHTQbsnlw"","
+"8": "https://www.instagram.com/p/DR8uZctAY8x/?img_index=1",
+"""9"": ""https://weibo.com/7907332195/OEYEPcgjm
+https://www.youtube.com/watch?v=D8Zeznnm8EA"","
+"10": "https://www.threads.com/@yulet0514/post/DXu6Sv8Ez1m",
+"""11"": ""https://www.threads.com/@vein_0o/post/DN7WLVsireR
+https://www.threads.com/@lolofan_tasy/post/DMbpJQAtGrd"","
+"""12"": ""https://youtu.be/sHQ2v8cSZ-8?t=577
+https://www.youtube.com/watch?v=sHQ2v8cSZ-8"","
+"13": "https://www.youtube.com/watch?v=ebxpI5Laj_c",
+"14": "https://www.youtube.com/watch?v=7VB_4Y8iM50",
+"15": "https://www.youtube.com/watch?v=kA7xkHnbSqk",
+"16": "https://www.youtube.com/watch?v=cHoGa3wVN-Y",
+"17": "https://www.youtube.com/watch?v=E8tUosANv5I",
+"18": "https://www.youtube.com/watch?v=eaW6Q15IHjo",
+"19": "https://www.youtube.com/watch?v=q8dMEDKpUZ8",
+"20": "https://www.youtube.com/watch?v=2iguGP6g788",
+"21": "https://www.youtube.com/watch?v=lUfgplvVc2I",
+"22": "https://www.instagram.com/p/DVnpwpOkfb-/?img_index=17",
+"23": "https://www.youtube.com/watch?v=UAgKn4dC-uY",
+"24": "https://x.com/LingOrmCH3/status/2052590764232974693?s=20",
+"25": "https://www.threads.com/@vein_0o/post/DXnx2-mCipw",
+"26": "https://www.youtube.com/watch?v=tFgWqLXVOFA",
+"27": "https://www.youtube.com/watch?v=ebxpI5Laj_c",
+"28": "https://www.instagram.com/p/DAam5u8TCMp/?img_index=1",
+"29": "https://www.youtube.com/watch?v=5mIHL8iQHx8",
+"30": "https://www.youtube.com/watch?v=FIhhD7PYCfs&t=959s",
+"31": "https://www.instagram.com/p/C-ZDfvpzYpL/?img_index=1",
+"""32"": ""https://www.instagram.com/p/DJelWfvvZk9/
+24news（X）"","
+"33": "https://www.instagram.com/p/DLNAW7HBhW5/",
+"34": "https://www.instagram.com/p/C-ZCwWUz4Mm/",
+"35": "https://weibo.com/6017500230/OF1kWD1Qb",
+"36": "https://x.com/ormmormm/status/1960937509162225932?s=46",
+"37": "https://x.com/linglingsirilak/status/1335951665640263680?s=46",
+"38": "https://weibo.com/7883901037/5285481388442621",
+"39": "https://gqthailand.com/culture/movie/article/Orm-Kornnaphat-Sethratanapong-From-Local-Star-To-Global-Power",
+"40": "https://www.youtube.com/watch?v=HJvlP1DUgYI",
+"""41"": ""https://www.instagram.com/reels/DMUkqCdJQTx/
+https://www.threads.com/@tunpopinuk/post/DMUp7fptpPi?xmt=AQG0GeT_oEsL06blMcX8x7pDGZ4rl0XoJeUg0h0QPlW5ow"","
+"42": "https://www.youtube.com/watch?v=FnxP36QJy_A&t=1s",
+"43": "https://x.com/i/status/1884904408212808072",
+"""44"": ""https://www.harpersbazaar.com/tw/celebrity/celebritynews/a69931981/2026-january-coverstory-orm-kornnaphat/
+https://www.youtube.com/watch?v=UTziBCJygzs"","
+"45": "https://www.youtube.com/watch?v=E8tUosANv5I",
+"""46"": ""https://www.threads.com/@vein_0o/post/DQBNqufil0X
+https://www.bilibili.com/video/BV13HHvewE35/?spm_id_from=333.337.search-card.all.click&vd_source=1b88ae81f876e752f29a2fdc24b2b866"","
+"47": "https://www.instagram.com/p/CeqLtGLuC4P/",
+"""48"": ""https://weibo.com/7799315281/P3joir2jI
+cant find 
+https://www.youtube.com/watch?v=RJR6lx74yb8"","
+"49": "https://www.youtube.com/watch?v=cHoGa3wVN-Y",
+"50": "https://www.youtube.com/watch?v=St_6TWIu2bk",
+"51": "https://www.threads.com/@vein_0o/post/DMS8u54qFr2",
+"52": "https://www.instagram.com/p/B39jnTcHRPs/",
+"53": "https://www.youtube.com/watch?v=Yke3ZVFsvXU",
+"54": "https://www.youtube.com/watch?v=lUfgplvVc2I",
+"55": "https://www.threads.com/@heather._.tw/post/DFcJ6m3yyQ-?",
+"""56"": ""https://www.sina.cn/news/detail/5184682946986565.html
+https://www.bilibili.com/video/BV1CuGxzxEnv/?spm_id_from=333.337.search-card.all.click&vd_source=1b88ae81f876e752f29a2fdc24b2b866"","
+"57": "ttps://www.youtube.com/watch?v=aidy_6RwOnE",
+"58": "https://www.instagram.com/p/CpqG9mkgjW3/",
+"59": "https://www.youtube.com/watch?v=6MIMhAQOqao",
+"60": "https://www.youtube.com/watch?v=xhGInk4q08s",
+"61": "https://www.instagram.com/p/DFq-PlUzDdG/?img_index=1",
+"62": "https://www.voguehk.com/zh/article/fashion/lingling-kwong-digital-cover/",
+"63": "https://www.youtube.com/watch?v=2NWEqP63JWo",
+"64": "https://weibo.com/7507306193/PjpvfgNla",
+"65": "https://www.instagram.com/p/DOUnEBAgfTR/?img_index=1",
+"66": "https://www.youtube.com/watch?v=VxuY8sISYdE",
+"67": "https://www.youtube.com/watch?v=lUfgplvVc2I",
+"68": "https://www.youtube.com/watch?v=Yke3ZVFsvXU",
+"69": "https://www.instagram.com/p/CYxl_0zPxHy/?img_index=1",
+"70": "https://www.youtube.com/watch?v=lUfgplvVc2I",
+"71": "https://www.instagram.com/p/CKJMT1xjfmx/?img_index=1",
+"72": "https://www.youtube.com/watch?v=Yke3ZVFsvXU",
+"73": "https://www.youtube.com/watch?v=ETdFeTV9qlE",
+"74": "https://www.youtube.com/watch?v=2iguGP6g788",
+"75": "https://www.youtube.com/watch?v=MYkUYMU48hU",
+"76": "https://www.instagram.com/p/CkDguMZvjEr/",
+"77": "https://youtu.be/C8d9xlOjL0c",
+"78": "https://www.youtube.com/watch?v=UAgKn4dC-uY",
+"""79"": ""https://www.threads.com/@vein_0o/post/DCQgwOKC4Fi
+https://www.youtube.com/watch?v=i7NFsqi57OY"","
+"80": "https://www.instagram.com/p/DPMXDg5gT8W/?img_index=1",
+"""81"": ""https://www.sina.cn/news/detail/5184682946986565.html
+https://www.bilibili.com/video/BV1CuGxzxEnv/?spm_id_from=333.337.search-card.all.click&vd_source=1b88ae81f876e752f29a2fdc24b2b866"","
+"82": "https://www.youtube.com/watch?v=vuFeTeoc968",
+"83": "https://www.youtube.com/watch?v=ebxpI5Laj_c",
+"84": "https://www.threads.com/@vein_0o/post/DS5j9kQit8H",
+"85": "https://www.youtube.com/watch?v=m3pn2c4iDCA",
+"86": "https://www.youtube.com/watch?v=HJvlP1DUgYI",
+"87": "https://www.youtube.com/watch?v=5mIHL8iQHx8",
+"88": "https://youtu.be/7DOZxL5naiA?si=zwhp3h68esT5E0PD",
+"89": "https://www.youtube.com/watch?v=ETdFeTV9qlE",
+"""90"": ""https://www.threads.com/@heather._.tw/post/DC1HSMNyvHF?
+https://www.youtube.com/watch?v=OgA6licv6lw"","
+"91": "https://www.instagram.com/p/DMTAxzyBm2v/",
+"92": "https://x.com/i/status/1848298430910595195",
+"""93"": ""https://x.com/Trapping_co/status/1854358277725036731?s=20
+https://www.threads.com/@vein_0o/post/DCGGQT8iVQ-"","
+"94": "https://www.youtube.com/watch?v=E8tUosANv5I",
+"95": "https://www.instagram.com/p/Bp8_Y_igEce/",
+"96": "https://www.youtube.com/watch?v=bXzJALQqBfM",
+"97": "https://www.youtube.com/watch?v=10FqQD1jKCA",
+"98": "https://x.com/LLLorm/status/2043274304658477274?s=20",
+"99": "https://www.youtube.com/watch?v=FnxP36QJy_A&t=1s",
+"100": "https://www.youtube.com/watch?v=vvXKdrxE9wM",
+"101": "https://weibo.com/7968860050/PC89wCREA?refer_flag=1001030103_",
+"102": "https://www.youtube.com/watch?v=HJvlP1DUgYI",
+"103": "https://weibo.com/6469948631/P0HmaqnSm",
+"104": "https://www.youtube.com/watch?v=xhGInk4q08s",
+"105": "https://www.instagram.com/p/CBuUt6LHeXY/?img_index=1",
+"106": "https://www.instagram.com/p/DYD9VmGz17G/",
+"107": "https://www.youtube.com/watch?v=FnxP36QJy_A&t=1s",
+"108": "https://www.threads.com/@lolofan_tasy/post/DU9T9FCAc3h",
+"109": "https://www.mintmagth.com/people/interview-ling-orm-mint-vol26-bvlgari-new-series",
+"110": "https://www.youtube.com/watch?v=28ZzlJwVEdM",
+"111": "https://weibo.com/7507306193/PjpvfgNla",
+"112": "https://www.youtube.com/watch?v=ETdFeTV9qlE",
+"113": "https://www.youtube.com/watch?v=m3pn2c4iDCA",
+"114": "https://x.com/i/status/1999774855005339800",
+"115": "https://weibo.com/tv/show/1034:5083171914448899?from=old_pc_videoshow",
+"116": "https://mirrorthailand.com/conversation/conversation/101673",
+"117": "https://www.youtube.com/watch?v=NZqw82NV0iY",
+"118": "https://www.youtube.com/watch?v=7M0HI3Kh02o",
+"119": "https://www.instagram.com/p/C9CVgsVxJY4/",
+"120": "https://www.youtube.com/watch?v=83a9wntAv5I",
+"""121"": ""https://weibo.com/7907332195/OEYEPcgjm
+https://www.youtube.com/watch?v=D8Zeznnm8EA"","
+"122": "https://www.youtube.com/watch?v=5waayw1E2yA",
+"""123"": ""https://weibo.com/7799315281/P3joir2jI 
+cant find 
+https://www.youtube.com/watch?v=RJR6lx74yb8"","
+"124": "https://www.harpersbazaar.com.sg/celebrity/lingling-kwong-harpers-bazaar-singapore-interview",
+"""125"": ""https://x.com/Ch3Thailand_33/status/1973976307483750866/video/1?s=46
+https://www.instagram.com/p/DPV9UI4k0pC/"","
+"126": "https://www.threads.com/@w_ang_h/post/DVQvdXekvfB",
+"""127"": ""https://vogue.co.th/celebrity/article/vogue-thailand-december-2025-lingling-kwong
+https://www.voguehk.com/zh/article/fashion/lingling-kwong-digital-cover/?q=/zh/article/fashion/lingling-kwong-digital-cover/&"","
+"128": "https://www.youtube.com/watch?v=g93CGHx0ocI&t=141s",
+"129": "https://www.youtube.com/watch?v=-UHWsHve2Cg",
+"130": "https://www.youtube.com/watch?v=sHQ2v8cSZ-8",
+"131": "https://www.threads.com/@03.forlingorm/post/DT5q4kTDx2T",
+"132": "https://weibo.com/5583748035/Q1CWPi5YH",
+"133": "https://harpersbazaar.co.th/fashion/interview/orm-kornnaphat-cover-story-may-2026/",
+"134": "https://www.youtube.com/watch?v=FnxP36QJy_A&t=1s",
+"135": "https://www.youtube.com/watch?v=E8tUosANv5I",
+"136": "https://weibo.com/tv/show/1034:5083171914448899?from=old_pc_videoshow",
+"137": "https://www.youtube.com/watch?v=ETdFeTV9qlE",
+"138": "https://www.instagram.com/p/Cve18HLRUtD/?img_index=1",
+"""139"": ""https://x.com/Trapping_co/status/1854358277725036731?s=20
+https://www.threads.com/@vein_0o/post/DCGGQT8iVQ-"","
+"140": "https://x.com/i/status/1882718153345728833",
+"141": "https://youtu.be/sbJWnfbrKNY?t=4928",
+"142": "https://weibo.com/7968860050/PC89wCREA?refer_flag=1001030103_",
+"""143"": ""https://wwdthailand.com/weekend/wwd-thailand-weekend-27-february-2026/
+https://www.threads.com/@endou990o/post/DV_cK0qkzK5"","
+"144": "https://www.youtube.com/watch?v=rkZzPJWvd2o&t=114s",
+"145": "https://www.harpersbazaar.com.sg/celebrity/lingling-kwong-harpers-bazaar-singapore-interview",
+"146": "https://www.youtube.com/watch?v=MYkUYMU48hU",
+"""147"": ""https://x.com/maema_icecream/status/2037028462054252691?s=20
+https://x.com/mitunanut/status/2037021844566679956?s=20"","
+"148": "https://www.youtube.com/watch?v=UAgKn4dC-uY",
+"149": "https://www.youtube.com/watch?v=Yke3ZVFsvXU",
+"""150"": ""https://www.threads.com/@vein_0o/post/DN7WLVsireR
+https://www.threads.com/@lolofan_tasy/post/DMbpJQAtGrd"","
+"151": "https://www.bilibili.com/video/BV14E421w7bu/?spm_id_from=333.337.search-card.all.click&vd_source=1b88ae81f876e752f29a2fdc24b2b866",
+"""152"": ""https://x.com/Minebaejuu/status/2067820108349870499
+https://www.youtube.com/live/R3szYIgIYdc?t=8226s"","
+"153": "https://www.instagram.com/p/DYowbU6Euje/",
+"154": "https://www.threads.com/@filterthai/post/DJeC1cLS5dE",
+"155": "https://x.com/linglingsirilak/status/1807791320624431347?s=46",
+"156": "https://www.voguehk.com/zh/article/fashion/lingling-kwong-digital-cover/",
+"157": "https://www.threads.com/@heather._.tw/post/DDjWlkSSY6J",
+"158": "https://www.youtube.com/watch?v=2NWEqP63JWo",
+"159": "https://www.youtube.com/watch?v=eaW6Q15IHjo",
+"160": "https://x.com/i/status/1882718153345728833",
+"161": "https://weibo.com/7507306193/PjpvfgNla",
+"""162"": ""https://www.youtube.com/shorts/GJRUlxLILRM
+https://www.instagram.com/p/DPTTp57kQ6H/"","
+"163": "https://m.weibo.cn/status/5301000379304989?jumpfrom=weibocom",
+"164": "https://www.instagram.com/p/DLNGGuSBXqr/",
+"165": "https://weibo.com/7507306193/PjpvfgNla",
+"166": "https://youtu.be/jLTxsYm1NTc",
+"167": "https://www.youtube.com/watch?v=kA7xkHnbSqk&t=80s",
+"168": "https://www.youtube.com/watch?v=7M0HI3Kh02o",
+"169": "https://www.threads.com/@lin.2567.in.thai/post/DVXxSFOjFE0?",
+"170": "https://www.youtube.com/watch?v=v2cmfjRNbvs",
+"171": "https://www.youtube.com/watch?v=2Y151QPOFwE",
+"172": "https://www.youtube.com/watch?v=MYkUYMU48hU",
+"173": "https://www.instagram.com/keepsilent.co/",
+"""174"": ""https://weibo.com/7795549770/OCAmiBYQL
+cant find 
+https://www.youtube.com/watch?v=8Yw7RFUrEF4"","
+"175": "https://www.youtube.com/watch?v=7M0HI3Kh02o",
+"176": "https://www.youtube.com/watch?v=9D34kCWEZrg",
+"177": "https://www.youtube.com/watch?v=rkZzPJWvd2o&t=114s",
+"178": "https://www.youtube.com/watch?v=VxuY8sISYdE",
+"179": "https://www.youtube.com/watch?v=UAgKn4dC-uY",
+"180": "https://www.youtube.com/watch?v=2iguGP6g788",
+"181": "https://thestandard.co/life/ling-ling-kwong-inner-beauty/",
+"182": "https://weibo.com/5583748035/Q1CWPi5YH",
+"183": "https://www.youtube.com/watch?v=HJvlP1DUgYI",
+"184": "https://www.voguehk.com/zh/article/fashion/lingling-kwong-digital-cover/",
+"185": "https://www.youtube.com/watch?v=FnxP36QJy_A&t=1s",
+"186": "https://www.youtube.com/watch?v=fizT8chQPBM",
+"187": "https://www.youtube.com/watch?v=v2cmfjRNbvs",
+"188": "https://www.instagram.com/p/DPGgfCPgV6H/?img_index=1",
+"189": "https://www.youtube.com/watch?v=bXzJALQqBfM",
+"""190"": ""https://www.youtube.com/watch?v=pDy-9A7pxlA
+https://x.com/i/status/2044998733587456046"","
+"191": "https://weibo.com/7839425977/PoiMHxy6V",
+"192": "https://www.youtube.com/watch?v=z_cT1EqwpAo",
+"193": "https://www.youtube.com/watch?v=q8dMEDKpUZ8",
+"194": "https://weibo.com/7920285655/PfiqGrWw0",
+"195": "https://www.voguehk.com/zh/article/fashion/lingling-kwong-digital-cover/",
+"196": "https://weibo.com/tv/show/1034:5083171914448899?from=old_pc_videoshow",
+"197": "https://www.instagram.com/p/DSSVgfQAeOB/?img_index=1",
+"198": "https://www.youtube.com/watch?v=xPVAj3_EyfE&t=6s",
+"199": "https://www.instagram.com/p/Cu_IUhWRJ6K/?img_index=1",
+"200": "https://www.youtube.com/watch?v=Yke3ZVFsvXU",
+"201": "https://weibo.com/7799315281/P2R9zyTZg",
+"202": "https://www.youtube.com/watch?v=ebxpI5Laj_c",
+"203": "https://www.threads.com/@vein_0o/post/DXjuo65iqIQ",
+"""204"": ""https://x.com/linglingsirilak/status/2039558609449926743?s=20
+https://x.com/ormmormm/status/2039579776994963834?s=20"","
+"205": "https://www.instagram.com/p/DPF6Zz1gaFB/",
+"206": "https://www.youtube.com/watch?v=m3pn2c4iDCA",
+"207": "https://www.threads.com/@wbooy_le/post/DQzndHrE5XP",
+"208": "https://www.threads.com/@vein_0o/post/DXlCW1mipgY",
+"209": "https://www.youtube.com/watch?v=HJvlP1DUgYI",
+"210": "https://www.youtube.com/watch?v=Yke3ZVFsvXU",
+"211": "https://www.youtube.com/watch?v=FnxP36QJy_A&t=1s",
+"212": "https://www.instagram.com/p/DVDyjz0Ad2V/?img_index=17",
+"213": "https://www.youtube.com/watch?v=7qZCYVQUkGE",
+"214": "https://www.youtube.com/watch?v=VxuY8sISYdE",
+"215": "https://www.youtube.com/watch?v=1DCudc_69_s",
+"216": "https://x.com/pra2/status/2052429952663126172",
+"217": "https://www.youtube.com/watch?v=1DCudc_69_s",
+"218": "https://www.youtube.com/watch?v=tFgWqLXVOFA",
+"219": "https://www.youtube.com/watch?v=UAgKn4dC-uY",
+"220": "https://www.youtube.com/watch?v=rNAxevkwscw",
+"221": "https://www.youtube.com/watch?v=ebxpI5Laj_c",
+"222": "https://www.youtube.com/watch?v=rTUq4PJaBb4",
+"223": "https://www.youtube.com/watch?v=rNAxevkwscw",
+"224": "https://www.youtube.com/watch?v=Eed33HBqHnY&ab_channel=Harper%27sBAZAARThailand",
+"225": "https://m.weibo.cn/detail/5112911018330618#&video",
+"226": "https://www.instagram.com/p/CKwHW5TDgrT/?img_index=1",
+"227": "https://www.youtube.com/watch?v=UAgKn4dC-uY",
+"228": "https://www.instagram.com/p/CcsJODeLLno/",
+"229": "https://www.youtube.com/watch?v=8_Ictjx1Syo",
+"230": "https://www.youtube.com/watch?v=xPVAj3_EyfE&t=6s",
+"231": "https://x.com/linglingsirilak/status/1901129233646449039?s=20",
+"232": "https://www.youtube.com/watch?v=MYkUYMU48hU",
+"233": "https://www.youtube.com/watch?v=z_cT1EqwpAo",
+"234": "https://www.instagram.com/p/DYD9VmGz17G/",
+"235": "https://www.youtube.com/watch?v=2NWEqP63JWo",
+"236": "https://www.youtube.com/watch?v=cU9DMKCHaWc",
+"237": "https://www.instagram.com/p/CQe1A_IHnA_/?img_index=1",
+"238": "https://www.youtube.com/watch?v=vuFeTeoc968",
+"239": "https://www.youtube.com/watch?v=HJvlP1DUgYI",
+"240": "https://www.youtube.com/watch?v=eaW6Q15IHjo",
+"241": "https://www.youtube.com/watch?v=tFgWqLXVOFA",
+"242": "https://www.youtube.com/watch?v=7M0HI3Kh02o",
+"243": "https://www.youtube.com/watch?v=z_cT1EqwpAo",
+"244": "https://www.instagram.com/p/C92Gc8Svu9K/?img_index=1",
+"245": "https://x.com/i/status/1882718153345728833",
+"246": "https://www.youtube.com/watch?v=bPPTLpXwqKY",
+"247": "https://weibo.com/6469948631/P0HmaqnSm",
+"248": "https://www.instagram.com/alwayswonder.co/",
+"249": "https://weibo.com/7968860050/PC89wCREA?refer_flag=1001030103_",
+"250": "https://x.com/OrmKornUnion/status/1957771780950511718?s=20",
+"251": "https://www.instagram.com/p/Csu6Jl9LheX/?img_index=1",
+"252": "https://www.youtube.com/watch?v=ETdFeTV9qlE",
+"253": "https://www.youtube.com/watch?v=8I3akXLKARI",
+"254": "https://www.youtube.com/watch?v=lUfgplvVc2I",
+"255": "https://www.instagram.com/p/CLv48V7nM0d/?img_index=1",
+"256": "https://x.com/i/status/1848298430910595195",
+"257": "https://www.youtube.com/watch?v=MYkUYMU48hU",
+"258": "https://weibo.com/5583748035/Q1CWPi5YH",
+"259": "https://weibo.com/6469948631/P0HmaqnSm",
+"""260"": ""https://www.harpersbazaar.com/tw/celebrity/celebritynews/a69931981/2026-january-coverstory-orm-kornnaphat/
+https://www.youtube.com/watch?v=UTziBCJygzs"","
+"261": "https://www.youtube.com/watch?v=bPPTLpXwqKY",
+"262": "https://www.youtube.com/watch?v=cU9DMKCHaWc",
+"263": "https://lofficielthailand.com/2024/11/lingling-kwong-in-loro-piana/",
+"264": "https://weibo.com/6469948631/P0HmaqnSm",
+"""265"": ""https://x.com/LAN_nnnna/status/1950255386159960458/video/1?s=46
+https://x.com/OrmKornUnion/status/1957771780950511718?s=20"","
+"266": "https://www.youtube.com/watch?v=UAgKn4dC-uY",
+"267": "https://www.youtube.com/watch?v=ebxpI5Laj_c",
+"268": "https://www.instagram.com/p/DYD9VmGz17G/",
+"269": "https://www.threads.com/@heather._.tw/post/DDjQV9ESSW8",
+"270": "https://www.youtube.com/watch?v=z_cT1EqwpAo",
+"271": "https://www.instagram.com/p/DEt4cXLR6Tc/",
+"272": "https://www.youtube.com/watch?v=HJvlP1DUgYI",
+"273": "ttps://www.youtube.com/watch?v=aidy_6RwOnE",
+"274": "https://www.instagram.com/p/DQRqi3iAVuG/?img_index=1",
+"275": "https://wwdthailand.com/weekend/wwd-thailand-weekend-27-february-2026/",
+"276": "https://weibo.com/7839425977/PoiMHxy6V",
+"277": "https://www.youtube.com/watch?v=m3pn2c4iDCA",
+"278": "https://www.youtube.com/watch?v=6MIMhAQOqao",
+"279": "https://www.instagram.com/p/C8rPwE0vSW1/?img_index=1",
+"280": "https://www.instagram.com/p/DI22bFbRgXT/?img_index=1",
+"281": "https://www.youtube.com/watch?v=6MIMhAQOqao",
+"282": "https://www.instagram.com/p/CCVlmG7n9rW/?img_index=1",
+"283": "https://www.instagram.com/p/DBIa6d3z6ec/?img_index=1",
+"284": "https://www.youtube.com/watch?v=vfpPdJSripg",
+
         }; // 貼在這一行上方（注意：最後一行的網址後面有沒有逗號都沒關係，瀏覽器看得懂）
 
         // 自動獲取網址列後面的 ?id= 參數
