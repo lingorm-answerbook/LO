@@ -1,19 +1,43 @@
-<script>
-    const qrRoutes = {
-        "1": "https://x.com/i/status/2000918169578561965",
-        "2": "https://google.com"
-    };
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在重新導向...</title>
+    <script>
+        // 🌟 請在這裡貼上你從 Excel 複製出來的 300 行資料
+        const qrRoutes = {
+"1": "https://x.com/i/status/2000918169578561965",
+"2": "https://youtu.be/2iguGP6g788?t=849",
+"3": "https://x.com/i/status/1999774855005339800",
+        }; 
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const qrId = urlParams.get('id');
+        // 預設跳轉的主網站（防呆網址，當找不到 ID 時會去這裡）
+        const defaultUrl = "https://your-main-store.com";
 
-    // 【除錯用彈窗】網頁打開時，會彈出視窗告訴我們它抓到什麼 ID
-    alert("網頁目前抓到的 ID 是: " + qrId);
+        // 解析網址參數
+        const urlParams = new URLSearchParams(window.location.search);
+        const qrId = urlParams.get('id');
 
-    if (qrId && qrRoutes[qrId]) {
-        window.location.href = qrRoutes[qrId];
-    } else {
-        alert("找不到這個 ID，準備跳轉到預設首頁");
-        window.location.href = "https://google.com"; // 先暫時改成 google 方便測試
-    }
-</script>
+        // 決定最終目的地
+        const targetUrl = (qrId && qrRoutes[qrId]) ? qrRoutes[qrId] : defaultUrl;
+
+        // 🚀 執行自動跳轉
+        window.location.href = targetUrl;
+
+        // 當網頁載入完成後，把目的地塞進畫面的超連結（以防萬一自動跳轉失效）
+        window.addEventListener('DOMContentLoaded', () => {
+            const fallbackLink = document.getElementById('fallback-link');
+            if (fallbackLink) {
+                fallbackLink.href = targetUrl;
+            }
+        });
+    </script>
+</head>
+<body>
+    <p style="text-align: center; margin-top: 50px; font-family: sans-serif; font-size: 18px; color: #333;">
+        頁面跳轉中，請稍候...<br><br>
+        如果沒有自動跳轉，請 <a id="fallback-link" href="#" style="color: #0066cc; text-decoration: underline;">點擊此處</a>。
+    </p>
+</body>
+</html>
